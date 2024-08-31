@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="clock" class="clock"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- HTML: Creates a container <div> with the ID clock where the time will be displayed.
+
+CSS: Styles the body to center the clock and sets the clock's font size and color.
+
+JavaScript:
+getCurrentTime function creates a new Date object and extracts the current hours, minutes, and seconds. Each value is formatted to ensure it is always two digits long.
+setInterval calls getCurrentTime every second to update the time on the page.
+The initial call to getCurrentTime ensures the clock shows the correct time immediately when the page loads.. -->
