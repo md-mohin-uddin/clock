@@ -7,7 +7,9 @@ const getCurrentTime = () => {
   minutes = minutes >= 10 ? minutes : "0" + minutes;
   let seconds = date.getSeconds();
   seconds = seconds >= 10 ? seconds : "0" + seconds;
-  const timeString = `${hours}:${minutes}:${seconds}`;
+  const timeString = `${hours}:${minutes}:${seconds} ${
+    hours < 12 ? "AM" : "PM"
+  }`;
   document.getElementById("clock").textContent = timeString;
 };
 setInterval(getCurrentTime, 1000);
